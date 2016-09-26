@@ -63,8 +63,7 @@
   <!-- generic resources -->
   <browser:resource
     name="bda.plone.cart.js"
-    file="cart.js"
-    layer="..interfaces.ICartExtensionLayer" />
+    file="cart.js" />
 
   <browser:page
     for="*"
@@ -77,44 +76,37 @@
   <browser:resource
     zcml:condition="not-have plone-5"
     name="bda.plone.cart.css"
-    file="cart_p4.css"
-    layer="..interfaces.ICartExtensionLayer" />
+    file="cart_p4.css" />
 
   <browser:resourceDirectory
     zcml:condition="not-have plone-5"
     name="bda.plone.cart.images"
-    directory="images"
-    layer="..interfaces.ICartExtensionLayer" />
+    directory="images" />
 
   <!-- plone 5 resources -->
   <browser:resource
     zcml:condition="have plone-5"
     name="cookie.functions.js"
-    file="cookie_functions.js"
-    layer="..interfaces.ICartExtensionLayer" />
+    file="cookie_functions.js" />
 
   <browser:resource
     zcml:condition="have plone-5"
     name="bda.plone.cart.less"
-    file="cart_p5.less"
-    layer="..interfaces.ICartExtensionLayer" />
+    file="cart_p5.less" />
 
   <browser:resource
     zcml:condition="have plone-5"
     name="bda.plone.cart.css"
-    file="cart_p5.css"
-    layer="..interfaces.ICartExtensionLayer" />
+    file="cart_p5.css" />
 
   <browser:resource
     zcml:condition="have plone-5"
     name="bda.plone.cart.css.map"
-    file="cart_p5.css.map"
-    layer="..interfaces.ICartExtensionLayer" />
+    file="cart_p5.css.map" />
 
   <browser:resourceDirectory
     zcml:condition="have plone-5"
     name="bda.plone.cart.font"
-    directory="font"
-    layer="..interfaces.ICartExtensionLayer" />
+    directory="font" />
 
 </configure>
